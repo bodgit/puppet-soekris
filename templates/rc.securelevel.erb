@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# !!! Managed by Puppet !!!
+
+gpioctl -q gpio1 0 set out <%= @error_led %>
+gpioctl -q gpio1 1 set out <%= @ready_led %>
